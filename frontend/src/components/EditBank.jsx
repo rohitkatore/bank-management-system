@@ -21,7 +21,7 @@ function EditBank() {
 
   const fetchBank = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/bank/view/${id}`, {
+      const response = await axios.get(`https://bank-management-system-1thr.onrender.com/bank/view/${id}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
