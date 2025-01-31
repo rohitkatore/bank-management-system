@@ -47,7 +47,7 @@ const AdminBankList = () => {
     
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/admin/search?query=${query}`, {
+      const response = await axios.get(`https://bank-management-system-1thr.onrender.com/admin/search?query=${query}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
