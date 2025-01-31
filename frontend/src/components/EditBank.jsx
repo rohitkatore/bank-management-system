@@ -49,7 +49,7 @@ function EditBank() {
     setSuccess('');
 
     try {
-      const response = await axios.put(`http://localhost:3000/bank/edit/${id}`, formData, {
+      const response = await axios.put(`https://bank-management-system-1thr.onrender.com/bank/edit/${id}`, formData, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
