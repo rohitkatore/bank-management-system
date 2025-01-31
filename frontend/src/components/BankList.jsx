@@ -13,7 +13,7 @@ function BankList() {
 
   const fetchBanks = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/bank/view', {
+      const response = await axios.get('https://bank-management-system-1thr.onrender.com/bank/view', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
