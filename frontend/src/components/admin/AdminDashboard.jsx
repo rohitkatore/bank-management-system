@@ -21,7 +21,7 @@ const AdminDashboard = () => {
   const fetchStats = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/admin/all', {
+      const response = await axios.get('https://bank-management-system-1thr.onrender.com/admin/all', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
