@@ -29,7 +29,7 @@ function Register({ setAuth }) {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/users/register', {
+      const response = await axios.post('https://bank-management-system-1thr.onrender.com/users/register', {
         username,
         email,
         password,
