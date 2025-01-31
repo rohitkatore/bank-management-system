@@ -27,7 +27,7 @@ function AddBank() {
 
     try {
       console.log('Token being sent:', localStorage.getItem('token'));
-      const response = await axios.post('http://localhost:3000/bank/add', formData, {
+      const response = await axios.post('https://bank-management-system-1thr.onrender.com/bank/add', formData, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
